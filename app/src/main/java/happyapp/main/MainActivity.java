@@ -17,27 +17,26 @@ public class MainActivity extends AppCompatActivity {
         final Button showButton = (Button)findViewById(R.id.smileyButton);
         final TextView topText = (TextView)findViewById(R.id.topText);
 
+        final HappyTracker happyTracker = new HappyTracker();
+
         happyImage.setVisibility(View.INVISIBLE);
 
         showButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                if(happyImage.getVisibility() == View.INVISIBLE){
+                happyTracker.changeStatus();
+                topText.setText(happyTracker.getCurrentText());
+                showButton.setText(happyTracker.getCurrentButtonText());
+
+                if(happyTracker.isHappy()){
                     happyImage.setVisibility(View.VISIBLE);
                     angryImage.setVisibility(View.INVISIBLE);
-                    topText.setText("You are happy!");
-                    showButton.setText("Click here to be ANGRY!");
                 }
                 else{
                     happyImage.setVisibility(View.INVISIBLE);
                     angryImage.setVisibility(View.VISIBLE);
-                    topText.setText("You are not happy!");
-                    showButton.setText("Click here to be HAPPY!");
-
                 }
-
-
             }
         });
     }
