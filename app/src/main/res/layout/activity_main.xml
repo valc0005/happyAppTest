@@ -1,6 +1,6 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
 >
 
     <ImageView
@@ -22,6 +22,17 @@
             android:layout_alignParentTop="true" android:layout_marginTop="488dp" android:layout_marginStart="0dp"
             android:layout_alignParentLeft="true" android:layout_marginLeft="0dp"
             android:text="Click here to be happy!"/>
+
+    <Button
+            android:id="@+id/diceButton"
+            android:onClick="showDiceNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" android:layout_marginTop="543dp" android:layout_marginStart="0dp"
+            android:layout_alignParentLeft="true" android:layout_marginLeft="0dp"
+            android:text="Roll dice"/>
+
     <TextView
             android:text="You are not happy!"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
