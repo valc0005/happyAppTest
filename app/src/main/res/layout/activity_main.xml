@@ -28,4 +28,12 @@
             android:layout_alignParentTop="true" android:layout_marginTop="488dp" android:layout_marginStart="0dp"
             android:layout_alignParentLeft="true" android:layout_marginLeft="0dp"
             android:text="Click here to be happy!"/>
+    <TextView
+            android:text="You are not happy!"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true" android:id="@+id/topText" android:layout_marginTop="58dp"
+    />
 </RelativeLayout>
