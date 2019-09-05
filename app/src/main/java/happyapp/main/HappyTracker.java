@@ -1,5 +1,7 @@
 package happyapp.main;
 
+import android.widget.ImageView;
+
 public class HappyTracker {
     private boolean happy;
     private String happyText = "You are happy!";
@@ -21,18 +23,20 @@ public class HappyTracker {
         return this.happy;
     }
 
-    public void changeStatus(){
+    public void changeStatus(ImageView image){
         if(this.happy)
         {
             this.happy = false;
             this.currentButtonText = this.angryButtonText;
             this.currentText = this.angryText;
+            image.setImageResource(R.drawable.angry);
         }
         else
         {
             this.happy = true;
             this.currentButtonText = this.happyButtonText;
             this.currentText = this.happyText;
+            image.setImageResource(R.drawable.grin);
         }
     }
 
@@ -45,4 +49,5 @@ public class HappyTracker {
     {
         return currentButtonText;
     }
+
 }
