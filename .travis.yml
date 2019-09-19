@@ -43,5 +43,9 @@ script:
   - ./gradlew assembleRelease --stacktrace
 
 notifications:
-
-webhooks: https://outlook.office.com/webhook/becd7648-b3f0-4a5b-8597-93d10ba784ab@4c16deb3-342d-4fca-bcd5-b1429308034c/TravisCI/feffeda7a12246f5a7c4066538d3bb70/e93046d6-9857-4153-8e7f-937760066838
+webhooks: https://outlook.office.com/webhook/becd7648-b3f0-4a5b-8597-93d10ba784ab@4c16deb3-342d-4fca-bcd5-b1429308034c/TravisCI/0f5bb34171c04fe987f5de1925d4020f/e93046d6-9857-4153-8e7f-937760066838
+  on_success: always # default: always
+  on_failure: always # default: always
+  on_start:   always # default: never
+  on_cancel:  always # default: always
+  on_error:   always # default: always
