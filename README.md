@@ -1,0 +1,1 @@
+[![codecov](https://codecov.io/gh/valc0005/happyAppTest/branch/master/graph/badge.svg?token=00ttPC2DlJ)](https://codecov.io/gh/valc0005/happyAppTest)
