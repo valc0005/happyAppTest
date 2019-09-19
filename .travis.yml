@@ -42,8 +42,8 @@ before_script:
 
 script:
 #  - ./gradlew clean build
-  - ./gradlew clean build
-  - ./gradlew test jacocoTestReport
+  - ./gradlew clean build jacocoTestReport
+  - ./gradlew test
   - ./gradlew assembleRelease --stacktrace
 
 after_success:
