@@ -45,7 +45,7 @@ script:
   - ./gradlew clean build
   - ./gradlew test
   - ./gradlew app:testDebug --tests=happyapp.main.MathTest jacocoTestReport
-  - ./gradlew assembleRelease --stacktrace
+  - ./gradlew assemble
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)

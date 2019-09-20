@@ -1,6 +1,9 @@
-  #create the new directory will contain que October generated apk  mkdir $ HOME / buildApk /
-  #copy generated apk from build folder to the folder just created  cp -R app / build / outputs / apk / app-debug.apk $ HOME / android /
-  #go to home and git setup    cd $ HOME
+  #create the new directory will contain que October generated apk
+  mkdir buildApk
+  #copy generated apk from build folder to the folder just created
+  cp -R app/build/outputs/apk/app-debug.apk /android/
+  #go to home and git setup
+  cd ..
   git config --global user.email "valc0005@hz.nl"
   git config --global user.name "valc0005"
   # Clone the repository in the folder buildApk  git clone --quiet --branch master = https: // user-name: $GITHUB_API_KEY@github.com/user-name/repo-name master> / dev / null
