@@ -1,7 +1,7 @@
   #create the new directory will contain que October generated apk
   mkdir buildApk
   #copy generated apk from build folder to the folder just created
-  cp -R app/build/outputs/apk/app-debug.apk /android/
+  cp -R app/build/outputs/apk/app-debug.apk /buildApk/
   #go to home and git setup
   cd ..
   git config --global user.email "valc0005@hz.nl"
