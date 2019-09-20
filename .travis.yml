@@ -49,7 +49,7 @@ script:
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
-  - ./upload-apk.sh
+  - chmod +x ./upload-apk.sh
 
 notifications:
 
