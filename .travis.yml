@@ -44,7 +44,7 @@ script:
 #  - ./gradlew clean build
   - ./gradlew clean build
   - ./gradlew test
-  - ./gradlew app:testDebug --tests=happyapp.main jacocoTestReport
+  - ./gradlew app:testDebug --tests=happyapp.main.MathTest jacocoTestReport
   - ./gradlew assembleRelease --stacktrace
 
 after_success:
