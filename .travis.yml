@@ -46,6 +46,7 @@ script:
   - ./gradlew test
   - ./gradlew app:testDebug --tests=happyapp.main.MathTest jacocoTestReport
   - ./gradlew assembleDebug
+  - travis setup releases --pro
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
