@@ -9,7 +9,6 @@ before_install:
 jdk: oraclejdk8
 env:
   global:
-    - GITHUB_API_KEY="44ddbad0ba45badba60b45d614b1b25edd9395f0"
     - CODECOV_TOKEN="85b6866b-010e-43f7-b647-cfe3bec60d3f"
 android:
   components:
@@ -53,7 +52,7 @@ after_success:
 
 deploy:
   provider: releases
-  api-key: $GITHUB_API_KEY
+  api-key: 44ddbad0ba45badba60b45d614b1b25edd9395f0
   file: $TRAVIS_BUILD_DIR/app/build/outputs/apk/debug/app-debug.apk
   skip_cleanup: true
   name: dev-build-$TRAVIS_TAG
